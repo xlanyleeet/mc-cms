@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 23, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/middleware.ts"],"sourcesContent":["import { getToken } from \"next-auth/jwt\";\nimport { NextResponse } from \"next/server\";\nimport type { NextRequest } from \"next/server\";\n\nexport async function middleware(req: NextRequest) {\n  const token = await getToken({ req });\n\n  if (req.nextUrl.pathname.startsWith(\"/admin\") && token?.role !== \"user\") {\n    return NextResponse.redirect(new URL(\"/auth/signin\", req.url));\n  }\n\n  return NextResponse.next();\n}\nexport const config = {\n  matcher: [\"/admin\"],\n};\n"],"names":[],"mappings":";;;;AAAA;AACA;AAAA;;;AAGO,eAAe,WAAW,GAAgB;IAC/C,MAAM,QAAQ,MAAM,CAAA,GAAA,oJAAA,CAAA,WAAQ,AAAD,EAAE;QAAE;IAAI;IAEnC,IAAI,IAAI,OAAO,CAAC,QAAQ,CAAC,UAAU,CAAC,aAAa,OAAO,SAAS,QAAQ;QACvE,OAAO,6LAAA,CAAA,eAAY,CAAC,QAAQ,CAAC,IAAI,IAAI,gBAAgB,IAAI,GAAG;IAC9D;IAEA,OAAO,6LAAA,CAAA,eAAY,CAAC,IAAI;AAC1B;AACO,MAAM,SAAS;IACpB,SAAS;QAAC;KAAS;AACrB"}}]
+}

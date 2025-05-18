@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/xlanyleeet/Desktop/mc-cms/components/CopyIPButton.tsx"],"sourcesContent":["\"use client\";\n\nimport { useState } from \"react\";\n\ninterface CopyIPButtonProps {\n  serverIP?: string;\n}\n\nexport default function CopyIPButton({ serverIP = \"play.yourserver.com\" }: CopyIPButtonProps) {\n  const [copied, setCopied] = useState(false);\n\n  const handleCopyIP = () => {\n    if (!serverIP) return;\n    \n    navigator.clipboard.writeText(serverIP);\n    setCopied(true);\n    \n    setTimeout(() => {\n      setCopied(false);\n    }, 2000);\n  };\n\n  return (\n    <button\n      onClick={handleCopyIP}\n      className=\"bg-green-600 hover:bg-green-500 text-white px-5 py-3 rounded-lg text-base font-semibold transition relative\"\n    >\n      {copied ? \"IP скопійовано!\" : `Скопіювати IP: ${serverIP}`}\n    </button>\n  );\n}"],"names":[],"mappings":";;;;AAEA;AAFA;;;AAQe,SAAS,aAAa,EAAE,WAAW,qBAAqB,EAAqB;IAC1F,MAAM,CAAC,QAAQ,UAAU,GAAG,CAAA,GAAA,qMAAA,CAAA,WAAQ,AAAD,EAAE;IAErC,MAAM,eAAe;QACnB,IAAI,CAAC,UAAU;QAEf,UAAU,SAAS,CAAC,SAAS,CAAC;QAC9B,UAAU;QAEV,WAAW;YACT,UAAU;QACZ,GAAG;IACL;IAEA,qBACE,8OAAC;QACC,SAAS;QACT,WAAU;kBAET,SAAS,oBAAoB,CAAC,eAAe,EAAE,UAAU;;;;;;AAGhE","debugId":null}}]
+}

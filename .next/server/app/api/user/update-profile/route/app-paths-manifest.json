@@ -1,0 +1,3 @@
+{
+  "/api/user/update-profile/route": "app/api/user/update-profile/route.js"
+}

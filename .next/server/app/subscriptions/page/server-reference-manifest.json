@@ -1,0 +1,16 @@
+{
+  "node": {
+    "407bdb014c758dbdcdce58ac7f116cb58c47383aad": {
+      "workers": {
+        "app/subscriptions/page": {
+          "moduleId": "[project]/.next-internal/server/app/subscriptions/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/subscriptions/page.tsx [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/subscriptions/page": "rsc"
+      }
+    }
+  },
+  "edge": {}
+}

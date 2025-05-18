@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/xlanyleeet/Desktop/mc-cms/app/profile/loading.tsx"],"sourcesContent":["export default function Loading() {\n    return (\n      <div className=\"flex justify-center items-center h-full min-h-[60vh]\">\n        <div className=\"flex flex-col items-center\">\n          <div className=\"relative\">\n            <div className=\"w-12 h-12 rounded-full border-4 border-indigo-600 border-t-transparent animate-spin\"></div>\n          </div>\n          <p className=\"mt-4 text-indigo-300\">Завантаження...</p>\n        </div>\n      </div>\n    );\n  }"],"names":[],"mappings":";;;;;AAAe,SAAS;IACpB,qBACE,8OAAC;QAAI,WAAU;kBACb,cAAA,8OAAC;YAAI,WAAU;;8BACb,8OAAC;oBAAI,WAAU;8BACb,cAAA,8OAAC;wBAAI,WAAU;;;;;;;;;;;8BAEjB,8OAAC;oBAAE,WAAU;8BAAuB;;;;;;;;;;;;;;;;;AAI5C","debugId":null}}]
+}
